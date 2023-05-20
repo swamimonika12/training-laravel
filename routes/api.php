@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::post('upload-file', 'App\Http\Controllers\TestController@fileUpload');
 Route::post('delete-file', 'App\Http\Controllers\TestController@fileDestroy');
+Route::get('posts', 'App\Http\Controllers\PostController@index');
