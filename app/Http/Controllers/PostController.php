@@ -73,6 +73,7 @@ class PostController extends Controller
             }
         }
 
+        // return $posts->toSql();
         if ($request->has('page')) {
             $posts = $posts->simplePaginate($request->input('per_page', 10));
 
